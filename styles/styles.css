@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+}
+
+body .header {
+    display: flex; 
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    background: #525252;
+    z-index: 1;
+}
+
+body .header .logoText a {
+    color: orange;
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/*Logo text hovering feature*/
+body .header .logoText a:hover {
+    color: rgb(234, 92, 4);
+    transition-duration: 1s;
+}
+
+body .header .nav{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+/*Search bar styling*/
+body .header .nav .searchArea input{
+    height: 42px;
+    width: 30%;
+    border-radius: 5px;
+    border: 1px solid #cecfd1;
+    padding: 0 20px;
+    position:absolute;
+    left:30%;
+    top:20%;
+}
+/*Search logo styling*/
+body .header .nav .searchArea .searchLogo{
+    width: 5%;
+    height: 35%;
+    border-radius: 5px;
+    padding: 0 20px;
+    position: absolute;
+    left:56%;
+    top:40%;
+}
+
+body .header .nav .natigations{
+    padding: 10px 0;
+}
+
+body .header .nav .natigations a{
+    color: orange;
+    margin: 0 20px;
+    padding: 10px 0;
+    text-decoration: none;
+    position: relative;
+}
+
+body .header .nav .natigations a:hover{
+    color: rgb(234, 92, 4);
+}
+
+body .header .nav .natigations a::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    right: -18px;
+    height: 100%;
+    top: 0px;
+    display: inline-block;
+}
+
