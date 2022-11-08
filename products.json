@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "img": "./img/dumbbellsSet.jpg",
+        "name": "DUMBBELLS SET",
+        "price": "€50",
+        "info": "Dumbbell set of 5-30KG bundle."
+    },
+    {
+        "id": 2,
+        "img": "./img/dumbbellsSet.jpg",
+        "name": "CYCLE TRAINER",
+        "price": "€32",
+        "info": "Refurbished cycle trainer."
+    },
+    {
+        "id": 3,
+        "img": "./img/dumbbellsSet.jpg",
+        "name": "YOGA MAT",
+        "price": "€9",
+        "info": "Yoga Mat 6mm TPE."
+    },
+    {
+        "id": 4,
+        "img": "./img/dumbbellsSet.jpg",
+        "name": "WEIGHT-PLATES",
+        "price": "€38",
+        "info": "Weight plate set of 5-50KG bundle."
+    },
+    {
+        "id": 5,
+        "img": "./img/dumbbellsSet.jpg",
+        "name": "KETTLE BELL",
+        "price": "€14",
+        "info": "Bolt adjustable kettle bell pair (4KG)."
+    },
+    {
+        "id": 6,
+        "img": "./img/dumbbellsSet.jpg",
+        "name": "TREADMILL",
+        "price": "€57",
+        "info": "Bolt Z5 Treadmill."
+    },
+    {
+        "id": 7,
+        "img": "./img/dumbbellsSet.jpg",
+        "name": "ELLIPTICAL MACHINE",
+        "price": "€79",
+        "info": "Nordic Track 14.9 Elliptical."
+    },
+    {
+        "id": 8,
+        "img": "./img/dumbbellsSet.jpg",
+        "name": "CROSS TRAINER",
+        "price": "€68",
+        "info": "Bolt XPro SG Cross trainer."
+    },
+    {
+        "id": 9,
+        "img": "./img/dumbbellsSet.jpg",
+        "name": "SKIPPING ROPE",
+        "price": "€5",
+        "info": "Pink Skipping ropes."
+    },
+    {
+        "id": 10,
+        "img": "./img/dumbbellsSet.jpg",
+        "name": "POWER BANDS",
+        "price": "€9.8",
+        "info": "Red resistence power bands."
+    },
+    {
+        "id": 11,
+        "img": "./img/dumbbellsSet.jpg",
+        "name": "SLAM BALL",
+        "price": "€10.5",
+        "info": "Bolt Strength Slam ball bundle."
+    },
+    {
+        "id": 12,
+        "img": "./img/dumbbellsSet.jpg",
+        "name": "BOXING GLOVES",
+        "price": "€22",
+        "info": "Adidas Performer Boxing Gloves."
+    }
+]
