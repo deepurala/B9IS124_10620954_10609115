@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+}
+
+body .header {
+    display: flex; 
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    background: #525252;
+    z-index: 1;
+  }
+
+body .header .logoText a {
+    color: orange;
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  /*Logo text hovering feature*/
+  body .header .logoText a:hover {
+    color: rgb(234, 92, 4);
+    transition-duration: 1s;
+  }
+
+/*Footer styling*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background: #525252;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: center;
+    color: white;
+  }
+  /*Footer Logo styling*/
+  .footer0 {
+    color: orange;
+    font-weight: 1200;
+    transition-duration: 1s;
+  }
+  .footer0:hover {
+    color: rgb(243, 92, 4);
+  }
+  /*Footer services styling*/
+  .footer1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+  }
+  .footer1 .heading {
+    font-weight: 900;
+    font-size: 18px;
+  }
+  .footer1 .heading:hover {
+    color: rgb(234, 92, 4);
+  }
+  .footer1 .div:hover {
+    transform: scale(1.05);
+  }
+  .footer1 div {
+    margin: 10px;
+  }
+
+  .form_container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
