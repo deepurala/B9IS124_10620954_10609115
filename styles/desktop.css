@@ -252,7 +252,7 @@ body .header .nav .natigations a::after{
 }
 
   
-  input[type=submit] {
+  /* input[type=submit] {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
@@ -263,4 +263,4 @@ body .header .nav .natigations a::after{
   
   input[type=submit]:hover {
     background-color: #45a049;
-  }
+  } */
