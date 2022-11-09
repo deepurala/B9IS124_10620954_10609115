@@ -3,6 +3,8 @@
         <meta name="viewport" content="width=device-width initial-scale=2.0">
         <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 601px)">
         <link rel="stylesheet" href="./styles/mobile.css" media="screen and (max-width: 600px)">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
         <!--Header Section-->
@@ -38,100 +40,100 @@
 
             <div class="section2">  
                 <div class="container">  
-                  <div class="items">  
-                    <div class="img img1"><img  
-                        src="./img/dumbbellsSet.jpg"  
-                        alt=""></div>  
-                    <div class="name">DUMBBELLSSET</div>  
-                    <div class="price">$5</div>  
+                  <div class="items" onclick="myalert('DUMBBELLSSET', '5')">  
+                    <div class="img img1">
+                      <img src="./img/dumbbellsSet.jpg" alt="" >
+                    </div>  
+                    <div class="name" id="name">DUMBBELLSSET</div>  
+                    <div class="price" id="price">€5</div>  
                     <div class="info">Dumbbel: 5-30KG bundle.</div>  
                   </div>  
-                  <div class="items">  
+                  <div class="items" onclick="myalert('CYCLE TRAINER', '6.34')">  
                     <div class="img img2"><img  
                         src="./img/cycleTrainer.jpg"  
                         alt=""></div>  
                     <div class="name">CYCLE TRAINER</div>  
-                    <div class="price">$6.34</div>  
+                    <div class="price">€6.34</div>  
                     <div class="info">Refurbished cycle trainer.</div>  
                   </div>  
-                  <div class="items">  
+                  <div class="items" onclick="myalert('YOGAMAT', '9')">  
                     <div class="img img3"><img  
                         src="./img/yogamat.png"  
                         alt=""></div>  
                     <div class="name">YOGAMAT</div>  
-                    <div class="price">$9</div>  
+                    <div class="price">€9</div>  
                     <div class="info">Yoga Mat 6mm TPE.</div>  
                   </div>  
-                  <div class="items">  
+                  <div class="items" onclick="myalert('WEIGHT-PLATES', '9')">  
                     <div class="img img1"><img  
                         src="./img/weight-plates.jpg"  
                         alt=""></div>  
                     <div class="name">WEIGHT-PLATES</div>  
-                    <div class="price">$9.1</div>  
+                    <div class="price">€9.1</div>  
                     <div class="info">Weight plate set.</div>  
                   </div>  
-                  <div class="items">  
+                  <div class="items" onclick="myalert('KETTLE BELL', '20')">  
                     <div class="img img1"><img  
                         src="./img/kettlebell.jpg"  
                         alt=""></div>  
                     <div class="name">KETTLE BELL</div>  
-                    <div class="price">$20</div>  
+                    <div class="price">€20</div>  
                     <div class="info">Bolt adjustable kettle bell.</div>  
                   </div>  
-                  <div class="items">  
+                  <div class="items" onclick="myalert('TREADMILL', '20')">  
                     <div class="img img1"><img  
                         src="./img/treadmill.png"  
                         alt=""></div>  
                     <div class="name">TREADMILL</div>  
-                    <div class="price">$18</div>  
+                    <div class="price">€20</div>  
                     <div class="info">Bolt Z5 Treadmill.</div>  
                   </div>  
-                  <div class="items">  
+                  <div class="items" onclick="myalert('ELLIPTICAL MACHINE', '6.7')">  
                     <div class="img img1"><img  
                         src="./img/ellipticalMachine.jpg"  
                         alt=""></div>  
                     <div class="name">ELLIPTICAL MACHINE</div>  
-                    <div class="price">$6.7</div>  
+                    <div class="price">€6.7</div>  
                     <div class="info">Nordic Track 14.9 Elliptical.</div>  
                   </div>  
-                  <div class="items">  
+                  <div class="items" onclick="myalert('CROSS TRAINER', '10')">  
                     <div class="img img1"><img  
                         src="./img/crossTrainer.jpg"  
                         alt=""></div>  
                     <div class="name">CROSS TRAINER</div>  
-                    <div class="price">$10</div>  
+                    <div class="price">€10</div>  
                     <div class="info">Bolt XPro SG Cross trainer.</div>  
                   </div>  
-                  <div class="items">  
+                  <div class="items" onclick="myalert('SKIPPING ROPE', '9.9')">  
                     <div class="img img1"><img  
                         src="./img/skippingRope.jpg"  
                         alt=""></div>  
                     <div class="name">SKIPPING ROPE</div>  
-                    <div class="price">$9.9</div>  
+                    <div class="price">$€9.9</div>  
                     <div class="info">Pink Skipping ropes.</div>  
                   </div>
-                  <div class="items">  
+                  <div class="items" onclick="myalert('POWER BANDS', '9.9')">  
                     <div class="img img1"><img  
                         src="./img/Resistance-Power-Bands.jpg"  
                         alt=""></div>  
                     <div class="name">POWER BANDS</div>  
-                    <div class="price">$9.9</div>  
+                    <div class="price">$€9.9</div>  
                     <div class="info">Red resistence power bands.</div>  
                   </div> 
-                  <div class="items">  
+                  <div class="items" onclick="myalert('SLAM BALL', '10.9')">  
                     <div class="img img1"><img  
                         src="./img/slamBall.png"  
                         alt=""></div>  
                     <div class="name">SLAM BALL</div>  
-                    <div class="price">$9.9</div>  
+                    <div class="price">€10.9</div>  
                     <div class="info">Bolt Strength Slam ball bundle.</div>  
                   </div>
-                  <div class="items">  
+                  <div class="items" onclick="myalert('GYM GLOVES', '5')">  
                     <div class="img img1"><img  
                         src="./img/gymGloves.jpg"  
                         alt=""></div>  
                     <div class="name">GYM GLOVES</div>  
-                    <div class="price">$9.9</div>  
+                    <div class="price">€5</div>  
                     <div class="info">Adidas Performer Boxing Gloves.</div>  
                   </div>
                 </div>  
@@ -173,4 +175,23 @@
               <div class="div">Login</div>  
             </div> 
         </footer> 
+
+        <script type="text/javascript">
+          function myalert(name, price){
+
+            if (confirm("You have selected the item " +name + " and its Price is  " +"€" +price)) {
+             let qty = prompt("Please enter quantity you need", "1");
+              if (qty ==0 || qty == ""){
+                alert("you cancelled it")
+              }else{
+                
+                confirm("Total amount you need to pay: " + price*qty); 
+              }
+              } else {
+                alert("you cancelled it")
+                }
+                              
+          }
+        </script>
+
     </body>
