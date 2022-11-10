@@ -38,7 +38,29 @@
                 </div> 
             </div>
 
-            <div class="section2">  
+            <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+            <div class="section2">
+              <div class="container">
+                <script>
+                  $(document).ready(()=>{
+                      $.getJSON('./products.json', (data)=>{
+                          data.forEach((product)=>{
+                            var productEL = '<div class="items">'+
+                                    '<div class="img"><a href="./product.html?id='+product.id+'"><img src="'+product.img+'"></a>'+
+                                    '<div class="name">'+product.name+'</div>'+
+                                    '<div class="price">'+product.price+'</div>'+
+                                    '<div class="info">'+product.info+'</div>'+
+                                  '</div>';
+                                  $('.container').append(productEL);
+                          });
+                      });
+                  });
+                </script>
+              </div>
+            </div>
+              
+            <!--<div class="section2">  
                 <div class="container">  
                   <div class="items" onclick="myalert('DUMBBELLSSET', '5')">  
                     <div class="img img1">
@@ -137,7 +159,7 @@
                     <div class="info">Adidas Performer Boxing Gloves.</div>  
                   </div>
                 </div>  
-              </div>   
+              </div>-->   
         </section>
 
         <!--Footer Section-->
