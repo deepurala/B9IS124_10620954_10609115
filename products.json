@@ -4,83 +4,204 @@
         "img": "./img/dumbbellsSet.jpg",
         "name": "DUMBBELLS SET",
         "price": "€50",
-        "info": "Dumbbell set of 5-30KG bundle."
+        "info": "Dumbbell set of 5-30KG bundle.",
+        "userReview": "4 Stars",
+        "description": "Our dumbbells are the perfect tool to take your workout to the next level. They also provide athletes with an effective targeting tool, to work every single muscle! Dumbbells are a must have for any gym environment, home gym and commercial alike. Add the WOW factor to your gym with these great rubber Hex Dumbbells!",
+        "features": [
+            "Available in weights 1-70kg.",
+            "Reliable",
+            "Comfortable hold",
+            "Chrome handle with knurling",
+            "Reduced impact and noise",
+            "Variety of exercises",
+            "Anti-roll design",
+            "Suitable for home and commercial gyms"
+        ]
     },
     {
         "id": 2,
         "img": "./img/cycleTrainer.jpg",
         "name": "CYCLE TRAINER",
-        "price": "€32",
-        "info": "Refurbished cycle trainer."
+        "price": "€1750",
+        "info": "Refurbished cycle trainer.",
+        "userReview": "4 Stars",
+        "description": "This is a refurbished model that we have in perfect working order. Our customer is upgrading their equipment and have taken these bikes in. The bikes come with a 3-month warranty.",
+        "features": [
+            "V-shaped frame to accommodate riders of all body shapes and sizes.",
+            "Magnetic resistance for a smooth and quiet workout.",
+            "Infinite incremental resistance changes.",
+            "Rear-wheel design for protection from sweat and corrosion.Transport wheels for ease of transport.",
+            "Revolutionary re-designed Keiser Bike Pedal.",
+            "Standard computer displaying power output in Watts",
+            "Four-way adjustable seat",
+            "Water bottle holder",
+            "Two-way adjustable handlebars"
+        ]
     },
     {
         "id": 3,
         "img": "./img/yogamat.png",
         "name": "YOGA MAT",
         "price": "€9",
-        "info": "Yoga Mat 6mm TPE."
+        "info": "Yoga Mat 6mm TPE.",
+        "userReview": "4 Stars",
+        "description": "Yoga mats are a must for any gymgoer or yoga enthusiast! This is a vital tool to get the best out of your workout. Our yoga mats create a comfortable barrier between the user and the floor below, taking away any pressure that could otherwise be felt from exercising solely on the ground.",
+        "features": [
+            "180cm length",
+            "61cm width"
+        ]
     },
     {
         "id": 4,
         "img": "./img/weight-plates.jpg",
         "name": "WEIGHT-PLATES",
         "price": "€38",
-        "info": "Weight plate set of 5-50KG bundle."
+        "info": "Weight plate set of 5-50KG bundle.",
+        "userReview": "4 Stars",
+        "description": "Strength train with tailored weight for your individual fitness level and needs with these Black Bumper Plates. Adjust the resistance level at any time by adding and removing the plates on your bar. Meet your goals of defining or building muscle also. These bumper plates can be used for a variety of exercises. These include targeted arm workouts, squats and crunches.",
+        "features": [
+            "Available in 5kg-25kg weights",
+            "2 inch Diameter",
+            "Colour: Sleek Black",
+            "Adjustable to your individual fitness level",
+            "Durable and Robust",
+            "Noise reducing",
+            "Protects flooring",
+            "Suitable for home and commercial gym use."
+        ]
     },
     {
         "id": 5,
         "img": "./img/kettlebell.jpg",
         "name": "KETTLE BELL",
         "price": "€14",
-        "info": "Bolt adjustable kettle bell pair (4KG)."
+        "info": "Bolt adjustable kettle bell pair (4KG).",
+        "userReview": "4 Stars",
+        "description": "A great addition to any strength and weight training routine, Cast Iron Kettlebells are a versatile piece of equipment. Moreover, they can be used for a diverse combination of workouts. Examples include squats, lunges, crunches and presses giving the fitness user a full body workout.",
+        "features": [
+            "Boost cardio stamina and muscular endurance",
+            "Minimal storage space requirements",
+            "Variety of exercises including squats, lunges, crunches",
+            "Robust and time tested durability"
+        ]
     },
     {
         "id": 6,
         "img": "./img/treadmill.png",
         "name": "TREADMILL",
-        "price": "€57",
-        "info": "Bolt Z5 Treadmill."
+        "price": "€2300",
+        "info": "Bolt Z5 Treadmill.",
+        "userReview": "4 Stars",
+        "description": "The Bolt Z5 has proven to be a fantastic addition to the Bolt Cardio Range and is very popular amongst Commercial Customers like Gyms and Sports Clubs. With the option for both Touchscreen or Keypad this treadmill has all the specs you need!",
+        "features": [
+            "Product Size (LxWxH): 2280mm x 950mm x 1620mm",
+            "Net Weight: 205Kgs",
+            "Running Area: 1700mm x 600mm",
+            "Drum Diameter: 88mm",
+            "Slope Range: 0-18",
+            "Motor: 3hp/kw",
+            "LCD screen: 18.5″",
+            "Speed: 1-20km/h",
+            "Max load: 180Kg",
+            "Package Size: 2300mm x 1000mm x 680mm"
+        ]
     },
     {
         "id": 7,
         "img": "./img/ellipticalMachine.jpg",
         "name": "ELLIPTICAL MACHINE",
-        "price": "€79",
-        "info": "Nordic Track 14.9 Elliptical."
+        "price": "€1650",
+        "info": "Nordic Track 14.9 Elliptical.",
+        "userReview": "4 Stars",
+        "description": "This ELLIPTICAL MACHINE was returned to us by a client and has since been fully serviced by our in-house engineer. Selling at a fraction of its retail price this top of the range, commercially graded spin bike is a steal! It comes with a 6-month warranty.",
+        "features": [
+            "Resistance:32 levels",
+            "Flywheel:14.2 kgs",
+            "LED display",
+            "Dimensions: 2175 x 690 x 1780mm",
+            ",Packing dimension: 2280 x 580 x 815(mm)",
+            "NW/GW 113kg/127kg",
+            "20 / 40″/ 40″loading: 20SET / 30 SET/ 60SET",
+            "Max users weight: 350lb / 159 kgs",
+            "Self-generated power"
+        ]
     },
     {
         "id": 8,
         "img": "./img/crossTrainer.jpg",
         "name": "CROSS TRAINER",
         "price": "€68",
-        "info": "Bolt XPro SG Cross trainer."
+        "info": "Bolt XPro SG Cross trainer.",
+        "userReview": "4 Stars",
+        "description": "The Precor AMT adaptive cross-trainer is ideal for a commercial gym or home gym. This cross trainer is almost brand new and has been used very little.",
+        "features": [
+            "Capacitive touch screen for responsive and intuitive workout control",
+            "Motion controls to alter movement and resistance with ease",
+            "Head-up viewing angle for correct, effective posture and comfort",
+            "Featured workouts to encourage users to try more variety in their routines"
+        ]
     },
     {
         "id": 9,
         "img": "./img/skippingRope.jpg",
         "name": "SKIPPING ROPE",
         "price": "€5",
-        "info": "Pink Skipping ropes."
+        "info": "Pink Skipping ropes.",
+        "userReview": "4 Stars",
+        "description": "Speed ropes are an ideal tool to help with cardio and stamina. Commonly used by athletes, for sports such as boxing, Speed Ropes help to increase stamina while keeping the user light on their feet and constantly moving. Speed Ropes are an ideal piece of equipment for any fitness conscious person as they are portable and can be used virtually anywhere and are also extremely easy to store meaning that they will not take up any space in a gym or home. The Speed rope is highly durable to last constant use and also turns with incredible ease allowing for maximum results.",
+        "features": [
+            "PVC Material",
+            "Foam Handles",
+            "Black in Colour",
+            "Diameter: 5.0mm",
+            "Length: 2.7m"
+        ]
     },
     {
         "id": 10,
         "img": "./img/Resistance-Power-Bands.jpg",
         "name": "POWER BANDS",
         "price": "€9.8",
-        "info": "Red resistence power bands."
+        "info": "Red resistence power bands.",
+        "userReview": "4 Stars",
+        "description": "Take your weight-training to the next level with a Resistance Power Band by both increasing muscular endurance and improving coordination. Moreover, these high strength Resistance Power Bands are unique. They also offer a constant resistance, which intensifies the workout by challenging more muscle groups as you build strength.",
+        "features": [
+            "Adaptable to all fitness levels (Beginner, Rehabilitation & Experienced)",
+            "Ideal for assisted pull-ups, stretching and lower leg exercises",
+            "Increase muscular endurance and coordination",
+            "Applicable for use with or without weights",
+            "Durable & Robust"
+        ]
     },
     {
         "id": 11,
         "img": "./img/slamBall.png",
         "name": "SLAM BALL",
         "price": "€10.5",
-        "info": "Bolt Strength Slam ball bundle."
+        "info": "Bolt Strength Slam ball bundle.",
+        "userReview": "4 Stars",
+        "description": "Slam Balls are an effective way to increase the intensity of your daily workout regime. By design, the Slam Balls are to be thrown against the walls or floor to build explosive strength. However this versatile tool can also be used like a traditional medicine ball. Used when undertaking squats, lunges and sit-ups, the slamball helps to engage muscle groups and build strength and muscle stamina. The strong interior filling is substantial to maintain the shape of the ball through repeated impact making it ideal for commercial gym use. The limited storage requirements of the Slam Ball also make it an ideal addition to your home gym.",
+        "features": [
+            "Durable and Robust design",
+            "Reliable grip surface",
+            "Boost cardio stamina",
+            "Build Strength and Muscular Endurance",
+            "Suitable for home and gym use"
+        ]
     },
     {
         "id": 12,
         "img": "./img/gymGloves.jpg",
         "name": "BOXING GLOVES",
         "price": "€22",
-        "info": "Adidas Performer Boxing Gloves."
+        "info": "Adidas Performer Boxing Gloves.",
+        "userReview": "4 Stars",
+        "description": "The Adidas Hybrid 200 is a great intermediate boxing glove. It is made with genuine buff leather with a PU inner for the users comfort. The Hybrid 200 can be used for sparring and bag work and is available in two different sizes (14oz and 16oz).",
+        "features": [
+            "Leather palm/thumb, outside area is PU.",
+            "14oz Glove",
+            "Extra Padding on the palm",
+            "Rigid Strap Closing"
+        ]
     }
 ]

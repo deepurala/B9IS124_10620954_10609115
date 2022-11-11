@@ -31,6 +31,7 @@ body .section .section1{
     display: none
 }
 
+
 .section2 .container {
     display: flex;
     width: 60%;
@@ -84,7 +85,6 @@ body .section .section1{
     transition-duration: 0.8s;
     border-radius: 12px;
 }
-
 
 footer{
     max-width: 100%;
