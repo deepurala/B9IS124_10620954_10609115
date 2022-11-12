@@ -32,28 +32,7 @@
         <div>
             <div class="section2">
                 <div class="container">
-                  <script>
-                    $(document).ready(()=>{
-                        var search = document.location.search;
-                        $.getJSON('./products.json', (data)=>{
-                            data.forEach((product)=>{
-                                if(search.indexOf(product.id) != -1){
-                                    var productEL = '<div class="items">'+
-                                      '<div class="img"><img src="'+product.img+'">'+
-                                      '<div class="name">'+product.name+'</div>'+
-                                      '<div class="price">'+product.price+'</div>'+
-                                      '<div class="info">'+product.info+'</div>'+
-                                      '<div class="userReview">'+product.userReview+'</div>'+
-                                      '<div class="description">'+product.description+'</div>'+
-                                      '<div class="features">'+product.features+'</div>'+
-                                    '</div>';
-                                    $('.container').append(productEL);
-                                }
-                            });
-                        });
-                    });
-                  </script>
-
+                  
                   <h1 class ="text-success text-center" >Reserve the Item mentioned above by filling in the details below</h1><br>
                   <div class=" col-lg-8 m-auto d-block">
                       <form action="index.html" method = "post" return validation()" class="bg-light">
@@ -172,6 +151,9 @@
 
             }
 
+
+            
         </script>
+
     </body>
 </html>

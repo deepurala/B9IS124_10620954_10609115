@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta name="viewport" content="width=device-width initial-scale=2.0">
+        <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 601px)">
+        
+        <link rel="stylesheet" href="./styles/mobile.css" media="screen and (max-width: 600px)">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <!--Header Section-->
+        <div class="header">
+            <div class="logoText"><a href="./index.html">XTream</a></div>
+            <div class="nav">
+                <div class="searchArea">
+                    <input placeholder="Search for products">
+                    <img class="searchLogo" src="./img/search-logo.png">
+                </div>
+                <div class="natigations">
+                    <a href="./index.html">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Sale</a>
+                    <a href="#">Products</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class ="media">
+            <script>
+                $(document).ready(()=>{
+                    var search = document.location.search;
+                    $.getJSON('./products.json', (data)=>{
+                        data.forEach((product)=>{
+                            if(search.indexOf(product.id) != -1){
+                                
+                                var productEL = ' <div class="media-left media-top">'+'<img src="'+product.img+'"  class="media-object" style="width:250px" ></div>'+
+                                '<div class = "media-body">'+
+                                '<h4 class ="media-heading" > ' + '<b>'+'Product Name: '+'</b>'+ product.name +'</h4>'+
+                                '<p>'+ '<b>'+ 'Product Price: '+'</b>' + product.price+'</p>'+
+                                '<p>'+'<b> '+' Product Info: ' + '</b>' + product.info+'</p>'+
+                                '<p>'+ '<b>'+'Product Review: '+'</b>'+ product.userReview+'</p>'+
+                                '<p>'+'<b>' + 'Product Description: '+'</b>'+ product.description+'</p>'+
+                                '<p>'+'<b>'+ 'Product Features: '+'</b>'+ product.features+'</p>'+
+                               
+                                '<div class="media-body">'+
+                                    '<div class="container p-3 my-6 border">'+
+                                    '<a href="./index.html" class="btn btn-info" role="button">Go Back</a>'+'&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'+
+                                    '<a href="./product.html" class="btn btn-info" role="button">customer details</a>'+
+                                    // '<button type="button" class="btn btn-info"  onclick="'+myalert()+'">Add to cart</button>' +
+                                '</div></div></div>';
+                            $('.media').append(productEL);
+                            }
+                        });
+                    });
+                });
+
+                function myalert(){
+                    alert("you booked it");
+                }
+            
+                    // function myalert(name, price){
+                    //     if (confirm("You have selected the item " +name + " and its Price is  " +"€" +price)) {
+                    //          let qty = prompt("Please enter quantity you need", "1");
+                    //          if (qty ==0 || qty == ""){
+                    //             alert("you cancelled it")
+                    //             }else{
+                    //                 confirm("Total amount you need to pay: " + price*qty); 
+                    //                 }
+                    //                 } else {
+                    //                     alert("you cancelled it")
+                    //                     }
+                    //                 }
+
+            </script>
+        </div>
+<button type="button" class="btn btn-info"  onclick="myalert()">Add to cart</button>
+
+     
+<footer>
+    <div class="footer0">  
+      <h1>XTream</h1>  
+      </div> 
+      <div class="footer1">  
+        <div class="product">  
+          <div class="heading">Products</div>  
+          <div class="div">Product servicing</div>  
+          <div class="div">Advertise</div>  
+          <div class="div">Pricing</div>  
+          <div class="div">Product Buisness</div>  
+        </div>  
+        <div class="services">  
+          <div class="heading">Services</div>  
+          <div class="div">Return</div>  
+          <div class="div">Cash Back</div>  
+          <div class="div">Affiliate Marketing</div>  
+          <div class="div">Others</div>  
+        </div> 
+        <div class="Company">  
+          <div class="heading">Company</div>  
+          <div class="div">Complaint</div>  
+          <div class="div">Careers</div>
+          <div class="div">About us</div> 
+          <div class="div">Support</div>  
+        </div>  
+        <div class="Get Help"> 
+          <div class="heading">Get Help</div>  
+          <div class="div">Help Center</div>  
+          <div class="div">Privacy Policy</div>  
+          <div class="div">Terms</div>  
+          <div class="div">Login</div>  
+        </div> 
+   </footer> 
+
+   
+    </body>
+</html>
