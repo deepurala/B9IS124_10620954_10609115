@@ -35,7 +35,7 @@
                   
                   <h1 class ="text-success text-center" >Reserve the Item mentioned above by filling in the details below</h1><br>
                   <div class=" col-lg-8 m-auto d-block">
-                      <form action="index.html" method = "post" return validation()" class="bg-light">
+                      <form action="/index.html" method = "post" class="bg-light" onsubmit="return(validation())">
                           <div class="form-group" > 
                               <label>Your name:</label>
                               <input type="text" name="user" class="form-control" id="userName" autocomplete="off">
@@ -54,7 +54,7 @@
                               <span id = "emailspan" class="text-danger font-weight-bold"></span>
                           </div>
       
-                          <input type="submit" name ="submit" value="submit" class="btn btn-success">
+                          <input type="submit" name ="submit" value="submit" class="btn btn-success" >
                 
                       </form>
                   </div>
@@ -103,6 +103,7 @@
             var userName = document.getElementById('userName').value;
             var mobileNumber = document.getElementById('mobileNumber').value;
             var email = document.getElementById('email').value;
+            
 
                 if (userName == ""){
                     document.getElementById('userspan').innerHTML = "** Please fill the user name";
@@ -149,10 +150,9 @@
                     return false; 
                 }
 
+                alert("Thank You for Shopping...! "+userName+" Have a nice day")
             }
-
-
-            
+ 
         </script>
 
     </body>

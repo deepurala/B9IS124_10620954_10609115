@@ -30,29 +30,26 @@
             </div>
         </div>
 
-        <div class ="media">
+        <div class ="media" >
             <script>
                 $(document).ready(()=>{
                     var search = document.location.search;
                     $.getJSON('./products.json', (data)=>{
                         data.forEach((product)=>{
                             if(search.indexOf(product.id) != -1){
-                                
+                                localStorage.setItem("productName",product.name);
+                                localStorage.setItem("productPrice",product.price);
                                 var productEL = ' <div class="media-left media-top">'+'<img src="'+product.img+'"  class="media-object" style="width:250px" ></div>'+
                                 '<div class = "media-body">'+
                                 '<h4 class ="media-heading" > ' + '<b>'+'Product Name: '+'</b>'+ product.name +'</h4>'+
-                                '<p>'+ '<b>'+ 'Product Price: '+'</b>' + product.price+'</p>'+
+                                '<p>'+ '<b>'+ 'Product Price: '+'</b>' + '€'+ product.price+'</p>'+
                                 '<p>'+'<b> '+' Product Info: ' + '</b>' + product.info+'</p>'+
                                 '<p>'+ '<b>'+'Product Review: '+'</b>'+ product.userReview+'</p>'+
                                 '<p>'+'<b>' + 'Product Description: '+'</b>'+ product.description+'</p>'+
                                 '<p>'+'<b>'+ 'Product Features: '+'</b>'+ product.features+'</p>'+
+                                '</div>';
                                
-                                '<div class="media-body">'+
-                                    '<div class="container p-3 my-6 border">'+
-                                    '<a href="./index.html" class="btn btn-info" role="button">Go Back</a>'+'&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'+
-                                    '<a href="./product.html" class="btn btn-info" role="button">customer details</a>'+
-                                    // '<button type="button" class="btn btn-info"  onclick="'+myalert()+'">Add to cart</button>' +
-                                '</div></div></div>';
+                          
                             $('.media').append(productEL);
                             }
                         });
@@ -60,26 +57,42 @@
                 });
 
                 function myalert(){
-                    alert("you booked it");
+                    name = localStorage.getItem("productName");
+                    price = localStorage.getItem("productPrice");
+                    if (confirm("You have selected the item " +name + " and its Price is  " +"€" +price)) {
+             let qty = prompt("Please enter quantity you need", "1");
+              if (qty ==0 || qty == ""){
+                alert("you cancelled it")
+              }else{
+                
+                if(confirm("Total amount you need to pay: " + price*qty)){
+                    alert("Thank you...!  ")
+                } else{
+                    alert("you cancelled it")
+                }
+                
+              }
+              } else {
+                alert("you cancelled it")
+                }
+                          
                 }
             
-                    // function myalert(name, price){
-                    //     if (confirm("You have selected the item " +name + " and its Price is  " +"€" +price)) {
-                    //          let qty = prompt("Please enter quantity you need", "1");
-                    //          if (qty ==0 || qty == ""){
-                    //             alert("you cancelled it")
-                    //             }else{
-                    //                 confirm("Total amount you need to pay: " + price*qty); 
-                    //                 }
-                    //                 } else {
-                    //                     alert("you cancelled it")
-                    //                     }
-                    //                 }
-
             </script>
         </div>
-<button type="button" class="btn btn-info"  onclick="myalert()">Add to cart</button>
+          
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-6">
+                <div class="container p-3 my-6 border">
+                    <a href="./index.html" class="btn btn-info" role="button">Go Back</a> &nbsp &nbsp &nbsp &nbsp 
+                    <a href="./product.html" class="btn btn-info" role="button" onclick="myalert()">customer details</a>           
+              </div>
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
 
+            
      
 <footer>
     <div class="footer0">  
