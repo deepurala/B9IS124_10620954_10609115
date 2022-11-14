@@ -1,4 +1,4 @@
-<script>
+/*<script>
           function searchFunction() {
             // Declare variables
             var input, filter, product, i, textValue;
@@ -28,4 +28,4 @@
               }
             }
           }
-          </script>
+          </script>*/
