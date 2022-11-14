@@ -11,9 +11,12 @@
         <div class="header">
             <div class="logoText"><a href="#">XTream</a></div>
             <div class="nav">
-                <div class="searchArea">
-                    <input type="text" class="form-control input-lg" id="seachProduct" placeholder="Search for products">
-                </div>
+              <div class="form-outline">
+                <input type="search" id="form1" class="form-control" onclick='seachProduct()' placeholder="Search Product" aria-label="Search" />
+              </div>
+                <!--<div class="searchArea">
+                    <input type="text" class="form-control input-lg" id="seachProduct" onclick='seachProduct()' placeholder="Search for products">
+                </div>-->
                 <div class="natigations">
                     <a href="#">Home</a>
                     <a href="#">Shop</a>
@@ -98,18 +101,32 @@
         </footer>
 
         <script>
-          $('#seachProduct').keyup(function(){
-            var searchField = $(this).val();
-            
-            var regex = new RegExp(searchField, "i");
-              $.each('./product.json', function(key, val){
-                element = val.name.search(regex);
-                if (element != -1) {
-                  output = val.id[element.length - 1];
-                }
-              });
-              window.location.href = "./productDetails.html?id='"+output+"'";
-        });
+        function seachProduct() {
+          let srchString = ''
+          var searchField = $('#form1').val().trim();
+          let productJson = './products.json';
+          let srchVal = productJson.filter(val => val.name.includes(searchField))
+          window.location.href = "./productDetails.html?id="+(srchVal.length - 1).id;
+          
+          
+        }
         </script>
+        <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js' />
+        <script>
+          function seachProduct()
+            {
+              var name = document.getElementById('form1').value;
+              $(document).ready(()=>{
+                var search = document.location.search;
+                $.getJSON('./products.json', (data)=>{
+                  data.forEach((product)=>{
+                    if(search.indexOf(product.name) != -1)
+                    window.location.href = "./productDetails.html?id="+product.id;
+                  })
+                })
+              })              
+            }
+        </script>
+        </script>-->
     </body>
     </html>

@@ -19,7 +19,7 @@ body .header .nav{
 }
 
 /*Search bar styling*/
-body .header .nav .searchArea input{
+body .header .nav .form-outline input{
     height: 42px;
     width: 30%;
     border-radius: 5px;
