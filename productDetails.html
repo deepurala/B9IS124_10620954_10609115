@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <div>
+       
           <div class="section2">
               <div class="container">
                 <div class ="media" >
@@ -41,7 +41,7 @@
                                   if(search.indexOf(product.id) != -1){
                                       localStorage.setItem("productName",product.name);
                                       localStorage.setItem("productPrice",product.price);
-                                      var productEL = ' <div class="media-left media-top">'+'<img src="'+product.img+'"  class="media-object" style="width:250px" ></div>'+
+                                      var productEL = ' <div class="pull-left img-responsive">'+'<img src="'+product.img+'"  class="media-object" style="width:250px" ></div>'+
                                       '<div class = "media-body">'+
                                       '<h4 class ="media-heading" > ' + '<b>'+'Product Name: '+'</b>'+ product.name +'</h4>'+
                                       '<p>'+ '<b>'+ 'Product Price: '+'</b>' + '€'+ product.price+'</p>'+
@@ -97,7 +97,7 @@
             
           </div>
 
-            </div>
+           
                      
         
           
