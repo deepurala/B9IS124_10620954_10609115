@@ -12,8 +12,7 @@
             <div class="logoText"><a href="#">XTream</a></div>
             <div class="nav">
                 <div class="searchArea">
-                    <input placeholder="Search for products">
-                    <img class="searchLogo" src="./img/search-logo.png">
+                    <input type="text" class="form-control input-lg" id="seachProduct" placeholder="Search for products">
                 </div>
                 <div class="natigations">
                     <a href="#">Home</a>
@@ -47,7 +46,7 @@
                       $.getJSON('./products.json', (data)=>{
                           data.forEach((product)=>{
                             var productEL = '<div class="items">'+
-                                    '<div class="img"><a href="./details.html?id='+product.id+'"><img src="'+product.img+'"></a>'+
+                                    '<div class="img"><a href="./productDetails.html?id='+product.id+'"><img src="'+product.img+'"></a>'+
                                     '<div class="name">'+product.name+'</div>'+
                                     '<div class="price">€'+product.price+'</div>'+
                                     '<div class="info">'+product.info+'</div>'+
@@ -79,7 +78,7 @@
               <div class="heading">Services</div>  
               <div class="div">Return</div>  
               <div class="div">Cash Back</div>  
-              <div class="div">Affiliate Marketing</div>  
+              <div class="div">Marketing</div>  
               <div class="div">Others</div>  
             </div>  
             <div class="Company">  
@@ -96,9 +95,21 @@
               <div class="div">Terms</div>  
               <div class="div">Login</div>  
             </div> 
-        </footer> 
+        </footer>
 
-       
-
+        <script>
+          $('#seachProduct').keyup(function(){
+            var searchField = $(this).val();
+            
+            var regex = new RegExp(searchField, "i");
+              $.each('./product.json', function(key, val){
+                element = val.name.search(regex);
+                if (element != -1) {
+                  output = val.id[element.length - 1];
+                }
+              });
+              window.location.href = "./productDetails.html?id='"+output+"'";
+        });
+        </script>
     </body>
     </html>

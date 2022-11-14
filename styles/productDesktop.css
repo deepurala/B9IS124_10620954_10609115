@@ -29,16 +29,6 @@ body .header {
       left:30%;
       top:20%;
   }
-  /*Search logo styling*/
-  body .header .nav .searchArea .searchLogo{
-      width: 5%;
-      height: 35%;
-      border-radius: 5px;
-      padding: 0 20px;
-      position: absolute;
-      left:56%;
-      top:40%;
-  }
   
   body .header .nav .natigations{
       padding: 10px 0;
