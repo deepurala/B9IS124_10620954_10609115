@@ -100,33 +100,38 @@
             </div> 
         </footer>
 
-        <script>
+        <!--<script>
         function seachProduct() {
           let srchString = ''
           var searchField = $('#form1').val().trim();
           let productJson = './products.json';
           let srchVal = productJson.filter(val => val.name.includes(searchField))
           window.location.href = "./productDetails.html?id="+(srchVal.length - 1).id;
-          
-          
         }
-        </script>
-        <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js' />
+        </script>-->
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
         <script>
           function seachProduct()
             {
-              var name = document.getElementById('form1').value;
-              $(document).ready(()=>{
-                var search = document.location.search;
-                $.getJSON('./products.json', (data)=>{
-                  data.forEach((product)=>{
-                    if(search.indexOf(product.name) != -1)
-                    window.location.href = "./productDetails.html?id="+product.id;
-                  })
-                })
-              })              
+              fetch("./products.json")
+              .then(function (response) {
+              return response.json();
+            })
+            .then(function (data) {
+            let productJson = data;
+            })
+            var name = document.getElementById('form1').value;
+            
+            let srchString = ''
+            var searchField = $('#search').val().trim();
+            let srchVal = data.filter(val => val.name.includes(searchField))
+            srchVal.forEach((item) => {
+            srchString += `<li>${item.name}<img src='${item.url}'</li>`
+          })
+
             }
         </script>
-        </script>-->
+        </script>
     </body>
     </html>
