@@ -12,11 +12,8 @@
             <div class="logoText"><a href="#">XTream</a></div>
             <div class="nav">
               <div class="form-outline">
-                <input type="search" id="form1" class="form-control" onclick='seachProduct()' placeholder="Search Product" aria-label="Search" />
+                <input type="search" id="form1" class="form-control" placeholder="Search Product" aria-label="Search" />
               </div>
-                <!--<div class="searchArea">
-                    <input type="text" class="form-control input-lg" id="seachProduct" onclick='seachProduct()' placeholder="Search for products">
-                </div>-->
                 <div class="natigations">
                     <a href="#">Home</a>
                     <a href="#">Shop</a>
@@ -63,6 +60,7 @@
             </div>
             
         </section>
+        
 
         <!--Footer Section-->
         <footer>
@@ -100,38 +98,31 @@
             </div> 
         </footer>
 
-        <!--<script>
-        function seachProduct() {
-          let srchString = ''
-          var searchField = $('#form1').val().trim();
-          let productJson = './products.json';
-          let srchVal = productJson.filter(val => val.name.includes(searchField))
-          window.location.href = "./productDetails.html?id="+(srchVal.length - 1).id;
-        }
-        </script>-->
-
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
+        
         <script>
-          function seachProduct()
-            {
-              fetch("./products.json")
-              .then(function (response) {
-              return response.json();
-            })
-            .then(function (data) {
-            let productJson = data;
-            })
-            var name = document.getElementById('form1').value;
-            
-            let srchString = ''
-            var searchField = $('#search').val().trim();
-            let srchVal = data.filter(val => val.name.includes(searchField))
-            srchVal.forEach((item) => {
-            srchString += `<li>${item.name}<img src='${item.url}'</li>`
-          })
-
-            }
+          $(function() {
+            var productJson = [];
+            $.getJSON('./products.json', function(json) {
+              productJson = json;
+            });
+            $("#form1").on("keyup", function() {
+              $(".container").html("");
+              var val = $.trim(this.value);
+              if (val) {
+                val = val.toLowerCase();                               
+                $.each(productJson, function(_,obj) {
+                  console.log(val,obj.name.toLowerCase().indexOf(val),obj)
+                  if (obj.name.toLowerCase().indexOf(val) != -1) {
+                    $(".container").append('<div class="items"><div class="img"><a href="./productDetails.html?id='+obj.id+'"><img src="'+obj.img+'"></a>'+
+                                    '<div class="name">'+obj.name+'</div>'+
+                                    '<div class="price">€'+obj.price+'</div>'+
+                                    '<div class="info">'+obj.info+'</div></div>');
+                  }
+                });
+              }
+            });
+          });
         </script>
-        </script>
+        
     </body>
     </html>
