@@ -1,128 +1,132 @@
 <!DOCTYPE html>
-    <head>
-        <meta name="viewport" content="width=device-width initial-scale=2.0">
-        <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 601px)">
-        <link rel="stylesheet" href="./styles/mobile.css" media="screen and (max-width: 600px)">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <!--Header Section-->
-        <div class="header">
-            <div class="logoText"><a href="#">XTream</a></div>
-            <div class="nav">
-              <div class="form-outline">
-                <input type="search" id="form1" class="form-control" placeholder="Search Product" aria-label="Search" />
-              </div>
-                <div class="natigations">
-                    <a href="#">Home</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Sale</a>
-                    <a href="#">Products</a>
-                    <a href="#">Contact Us</a>
-                </div>
-            </div>
+
+<head>
+  <meta name="viewport" content="width=device-width initial-scale=2.0">
+  <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 601px)">
+  <link rel="stylesheet" href="./styles/mobile.css" media="screen and (max-width: 600px)">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!--Header Section-->
+  <div class="header">
+    <div class="logoText"><a href="#">XTream</a></div>
+    <div class="nav">
+      <div class="form-outline">
+        <input type="search" id="form1" class="form-control" placeholder="Search Product" aria-label="Search" />
+      </div>
+      <div class="natigations">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Sale</a>
+        <a href="#">Products</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="section">
+      <div class="section1">
+        <div class="img-slider">
+          <img src="./img/img5.jpg" alt="" class="img">
+          <img src="./img/img4.jpg" alt="" class="img">
+          <img src="./img/img3.jpg" alt="" class="img">
+          <img src="./img/img2.jpg" alt="" class="img">
+          <img src="./img/img1.jpg" alt="" class="img">
         </div>
+      </div>
+    </div>
 
-        <section>
-            <div class="section">  
-                <div class="section1">  
-                  <div class="img-slider">  
-                    <img src="./img/img5.jpg" alt="" class="img">  
-                    <img src="./img/img4.jpg" alt="" class="img">
-                    <img src="./img/img3.jpg" alt="" class="img">  
-                    <img src="./img/img2.jpg" alt="" class="img">  
-                    <img src="./img/img1.jpg" alt="" class="img">     
-                  </div>  
-                </div> 
-            </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-            <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-
-            <div class="section2">
-              <div class="container">
-                <script>
-                  $(document).ready(()=>{
-                      $.getJSON('./products.json', (data)=>{
-                          data.forEach((product)=>{
-                            var productEL = '<div class="items">'+
-                                    '<div class="img"><a href="./productDetails.html?id='+product.id+'"><img src="'+product.img+'"></a>'+
-                                    '<div class="name">'+product.name+'</div>'+
-                                    '<div class="price">€'+product.price+'</div>'+
-                                    '<div class="info">'+product.info+'</div>'+
-                                  '</div>';
-                                  $('.container').append(productEL);
-                          });
-                      });
-                  });
-                </script>
-              </div>
-            </div>
-            
-        </section>
-        
-
-        <!--Footer Section-->
-        <footer>
-            <div class="footer0">  
-                <h1>XTream</h1>  
-              </div> 
-            <div class="footer1">  
-            <div class="product">  
-              <div class="heading">Products</div>  
-              <div class="div">Product servicing</div>  
-              <div class="div">Advertise</div>  
-              <div class="div">Pricing</div>  
-              <div class="div">Product Buisness</div>  
-            </div>  
-            <div class="services">  
-              <div class="heading">Services</div>  
-              <div class="div">Return</div>  
-              <div class="div">Cash Back</div>  
-              <div class="div">Marketing</div>  
-              <div class="div">Others</div>  
-            </div>  
-            <div class="Company">  
-              <div class="heading">Company</div>  
-              <div class="div">Complaint</div>  
-              <div class="div">Careers</div>
-              <div class="div">About us</div> 
-              <div class="div">Support</div>  
-            </div>  
-            <div class="Get Help">  
-              <div class="heading">Get Help</div>  
-              <div class="div">Help Center</div>  
-              <div class="div">Privacy Policy</div>  
-              <div class="div">Terms</div>  
-              <div class="div">Login</div>  
-            </div> 
-        </footer>
-
-        
+    <div class="section2">
+      <div class="container">
         <script>
-          $(function() {
-            var productJson = [];
-            $.getJSON('./products.json', function(json) {
-              productJson = json;
-            });
-            $("#form1").on("keyup", function() {
-              $(".container").html("");
-              var val = $.trim(this.value);
-              if (val) {
-                val = val.toLowerCase();                               
-                $.each(productJson, function(_,obj) {
-                  console.log(val,obj.name.toLowerCase().indexOf(val),obj)
-                  if (obj.name.toLowerCase().indexOf(val) != -1) {
-                    $(".container").append('<div class="items"><div class="img"><a href="./productDetails.html?id='+obj.id+'"><img src="'+obj.img+'"></a>'+
-                                    '<div class="name">'+obj.name+'</div>'+
-                                    '<div class="price">€'+obj.price+'</div>'+
-                                    '<div class="info">'+obj.info+'</div></div>');
-                  }
-                });
-              }
+          $(document).ready(() => {
+            $.getJSON('./products.json', (data) => {
+              data.forEach((product) => {
+                var productEL = '<div class="items">' +
+                  '<div class="img"><a href="./productDetails.html?id=' + product.id + '"><img src="' + product.img + '"></a>' +
+                  '<div class="name">' + product.name + '</div>' +
+                  '<div class="price">€' + product.price + '</div>' +
+                  '<div class="info">' + product.info + '</div>' +
+                  '</div>';
+                $('.container').append(productEL);
+              });
             });
           });
         </script>
-        
-    </body>
-    </html>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!--Footer Section-->
+  <footer>
+    <div class="footer0">
+      <h1>XTream</h1>
+    </div>
+    <div class="footer1">
+      <div class="product">
+        <div class="heading">Products</div>
+        <div class="div">Product servicing</div>
+        <div class="div">Advertise</div>
+        <div class="div">Pricing</div>
+        <div class="div">Product Buisness</div>
+      </div>
+      <div class="services">
+        <div class="heading">Services</div>
+        <div class="div">Return</div>
+        <div class="div">Cash Back</div>
+        <div class="div">Marketing</div>
+        <div class="div">Others</div>
+      </div>
+      <div class="Company">
+        <div class="heading">Company</div>
+        <div class="div">Complaint</div>
+        <div class="div">Careers</div>
+        <div class="div">About us</div>
+        <div class="div">Support</div>
+      </div>
+      <div class="Get Help">
+        <div class="heading">Get Help</div>
+        <div class="div">Help Center</div>
+        <div class="div">Privacy Policy</div>
+        <div class="div">Terms</div>
+        <div class="div">Login</div>
+      </div>
+  </footer>
+
+
+  <script>
+    $(function () {
+      var productJson = [];
+      $.getJSON('./products.json', function (json) {
+        productJson = json;
+      });
+      $("#form1").on("keyup", function () {
+        $(".container").html("");
+        var val = $.trim(this.value);
+        if (val) {
+          val = val.toLowerCase();
+          $.each(productJson, function (_, obj) {
+            console.log(val, obj.name.toLowerCase().indexOf(val), obj)
+            if (obj.name.toLowerCase().indexOf(val) != -1) {
+              $(".container").append('<div class="items"><div class="img"><a href="./productDetails.html?id=' + obj.id + '"><img src="' + obj.img + '"></a>' +
+                '<div class="name">' + obj.name + '</div>' +
+                '<div class="price">€' + obj.price + '</div>' +
+                '<div class="info">' + obj.info + '</div></div>');
+            }
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
