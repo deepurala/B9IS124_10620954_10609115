@@ -45,10 +45,11 @@ footer {
     color: white;
   }
   /*Footer Logo styling*/
-  .footer0 {
+  .footer0{
     color: orange;
     font-weight: 1200;
     transition-duration: 1s;
+    text-align: center;
   }
   .footer0:hover {
     color: rgb(243, 92, 4);
